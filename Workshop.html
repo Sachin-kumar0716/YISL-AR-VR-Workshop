@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YISL Workshop - AR/VR Projects</title>
+
+<style>
+
+/* =====================================================
+   COLOR PALETTE
+   ===================================================== */
+:root{
+    --dark-blue:#0B2D72;
+    --mid-blue:#0992C2;
+    --light-cyan:#0AC4E0;
+    --cream:#F6E7BC;
+}
+
+/* =====================================================
+   GLOBAL STYLES
+   ===================================================== */
+*{
+    margin:0;
+    padding:0;  
+    box-sizing:border-box;
+}
+
+body{
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background: var(--dark-blue);
+    color: var(--cream);
+    line-height:1.6;
+}
+
+/* =====================================================
+   STICKY NAVBAR
+   ===================================================== */
+.navbar{
+    position:sticky;
+    top:0;
+    background:var(--mid-blue);
+    padding:18px 0;
+    text-align:center;
+    box-shadow:0 6px 18px rgba(0,0,0,0.4);
+    border-bottom:3px solid var(--light-cyan);
+    z-index:1000;
+}
+
+.navbar h2{
+    color:var(--cream);
+    letter-spacing:2px;
+}
+
+/* =====================================================
+   MAIN CONTAINER
+   ===================================================== */
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+    padding-top:40px;
+}
+
+/* =====================================================
+   TEAM PROJECT CARD
+   ===================================================== */
+.team-card{
+
+    /* spacing between rows */
+    margin-bottom:50px;
+
+    /* VR styled card */
+    background:var(--mid-blue);
+    border:2px solid var(--light-cyan);
+    border-radius:12px;
+
+    /* subtle 3D effect */
+    box-shadow:
+        0 10px 25px rgba(0,0,0,0.6),
+        inset 0 0 15px rgba(10,196,224,0.2);
+
+    padding:35px;
+}
+
+/* =====================================================
+   PROJECT TITLE
+   ===================================================== */
+.project-title{
+    font-size:28px;
+    margin-bottom:15px;
+    color:var(--dark-blue);
+}
+
+/* =====================================================
+   PROJECT TAGLINE
+   ===================================================== */
+.project-tagline{
+    font: size 20px;px;
+    color:var(--cream);
+    font-style:italic;
+    margin-bottom:20px;
+    
+}
+
+/* =====================================================
+   DESCRIPTION
+   ===================================================== */
+.project-description{
+    margin-bottom:20px;
+}
+
+.project-description h2{
+    color:var(--dark-blue);
+    font-size:20px;
+    margin-bottom:10px;
+}
+
+/* =====================================================
+   TEAM NAME
+   ===================================================== */
+.team-name{
+    font-weight:bold;
+    font-size:18px;
+    margin-bottom:10px;
+    color:var(--light-cyan);
+}
+
+/* =====================================================
+   TEAM MEMBER LIST
+   ===================================================== */
+.team-members{
+    margin-bottom:25px;
+    padding-left:18px;
+}
+
+.team-members li{
+    margin-bottom:5px;
+}
+
+/* =====================================================
+   TEAM MEMBER ROW
+   ===================================================== */
+.team-members-row{
+    margin-bottom:25px;
+    color:var(--cream);
+    line-height:1.4;
+}
+
+.team-members-row strong{
+    color:var(--light-cyan);
+}
+
+/* =====================================================
+   RESPONSIVE VIDEO CONTAINER
+   ===================================================== */
+.video-container{
+
+    /* responsive trick */
+    position:relative;
+    width:100%;
+    padding-bottom:56.25%;
+
+    border:3px solid var(--light-cyan);
+    border-radius:10px;
+
+    overflow:hidden;
+
+    /* glowing VR effect */
+    box-shadow:
+        0 0 20px rgba(10,196,224,0.6),
+        0 10px 20px rgba(0,0,0,0.5);
+}
+
+.video-container iframe{
+    position:absolute;
+    width:100%;
+    height:100%;
+    border:none;
+}
+
+/* =====================================================
+   VIDEO LINK PLACEHOLDER
+   ===================================================== */
+.video-link-placeholder{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    height:100%;
+    padding:40px 20px;
+    text-align:center;
+    background:linear-gradient(135deg, var(--dark-blue), var(--mid-blue));
+}
+
+.video-link-placeholder h3{
+    color:var(--light-cyan);
+    font-size:24px;
+    margin-bottom:10px;
+}
+
+.video-link-placeholder p{
+    color:var(--cream);
+    margin-bottom:20px;
+}
+
+.video-link{
+    background:var(--light-cyan);
+    color:var(--dark-blue);
+    padding:12px 30px;
+    border-radius:25px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:background 0.3s ease, transform 0.2s ease;
+}
+
+.video-link:hover{
+    background:var(--cream);
+    transform:translateY(-2px);
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* =====================================================
+   RESPONSIVE TEXT
+   ===================================================== */
+@media(max-width:700px){
+
+    .project-title{
+        font-size:22px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- =====================================================
+     NAVBAR
+     ===================================================== -->
+<nav class="navbar">
+    <h2>YISL Workshop</h2>
+</nav>
+
+
+<div class="container">
+
+
+<!-- =====================================================
+     TEAM 1 (COPY THIS BLOCK TO ADD MORE TEAMS)
+     ===================================================== -->
+<section class="team-card">
+
+    <h1 class="project-title"> Project: V-Connect</h1>
+
+    <div class="project-tagline">Project Title : Meet Beyond Boundaries</div>
+<h2 class="project-description h2">Description</h2>
+    <p class="project-description">
+
+        Meet Beyond Boundaries - An innovative VR communication platform that 
+        enables immersive virtual meetings and social interactions, breaking 
+        down geographical barriers through cutting-edge virtual reality technology.
+    </p>
+
+    <div class="team-name">
+        Team Name: Team 404                                                                                                                                                                                                             
+    </div>
+
+    <div class="team-members-row">
+        <strong>Team Members:</strong> Muhammad Shegil, Nikhil N, Muhammad Rihan, Muhammad Danish, Muhammad Swalih, Muhammad MA, Muhammad Ramzin, Vishnu Priya, Sona Suresh, Ajin KK
+    </div>
+
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/ScMzIvxBSi4" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe>
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     TEAM 2
+     ===================================================== -->
+<section class="team-card">
+
+    <h1 class="project-title">FocusXR</h1>
+
+    <div class="project-tagline">Escape Distractions, Enter Focus</div>
+
+    <p class="project-description">
+        <h2>Description</h2>
+        It uses Virtual Reality to create immersive study environments (library, quiet room, nature space) 
+        that help students concentrate and improve productivity. This innovative VR solution transforms 
+        learning by eliminating distractions and creating the perfect study atmosphere.
+    </p>
+
+    <div class="team-name">
+        Team Name: Phoenix
+    </div>
+
+    <div class="team-members-row">
+        <strong>Team Members:</strong> Haaniah N, Fathima Hiba KP, Anannya Raj K, Farsana A S, Gowripriya B Nair, Bhavya B Madhu, Devika Rejith, Arya Jayaprasad, Akshaya Ragesh
+    </div>
+
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/LheF1uLCS6c" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe>
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     TEAM 3
+     ===================================================== -->
+<section class="team-card">
+
+    <h1 class="project-title">AR Campus Navigation Experience</h1>
+
+    <div class="project-tagline">Navigate with Innovation</div>
+
+    <p class="project-description">
+        This project demonstrates an AR navigation system for campus visitors.
+        Using web-based AR markers and A-Frame, users can view interactive
+        navigation arrows and building information directly from their phone.
+    </p>
+
+    <div class="team-name">
+        Team Name: VR Navigators
+    </div>
+
+    <ul class="team-members">
+        <li>Karan Gupta</li>
+        <li>Ananya Rao</li>
+        <li>Rahul Das</li>
+    </ul>
+
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen></iframe>
+    </div>
+
+</section>
+
+
+</div>
+
+</body>
+</html>
