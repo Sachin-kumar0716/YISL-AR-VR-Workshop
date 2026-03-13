@@ -40,8 +40,10 @@ body{
     position:sticky;
     top:0;
     background:var(--mid-blue);
-    padding:18px 0;
-    text-align:center;
+    padding:18px 40px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
     box-shadow:0 6px 18px rgba(0,0,0,0.4);
     border-bottom:3px solid var(--light-cyan);
     z-index:1000;
@@ -50,6 +52,23 @@ body{
 .navbar h2{
     color:var(--cream);
     letter-spacing:2px;
+    flex:1;
+}
+
+.navbar-center{
+    color:var(--cream);
+    font-size:22px;
+    font-weight:bold;
+    letter-spacing:2px;
+    flex:1;
+    text-align:center;
+}
+
+.navbar-date{
+    color:var(--cream);
+    font-size:16px;
+    flex:1;
+    text-align:right;
 }
 
 /* =====================================================
@@ -241,6 +260,8 @@ body{
      ===================================================== -->
 <nav class="navbar">
     <h2>YISL Workshop</h2>
+    <div class="navbar-center">AR/VR</div>
+    <div class="navbar-date">5 March 2026</div>
 </nav>
 
 
@@ -272,7 +293,7 @@ body{
     </div>
 
     <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/ScMzIvxBSi4" 
+        <iframe src="https://www.youtube.com/embed/e1OXLJoEBe0" 
                 title="YouTube video player" 
                 frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -324,31 +345,143 @@ body{
      ===================================================== -->
 <section class="team-card">
 
-    <h1 class="project-title">AR Campus Navigation Experience</h1>
+    <h1 class="project-title">Project: PhobiaVR</h1>
 
-    <div class="project-tagline">Navigate with Innovation</div>
+    <div class="project-tagline">face your fears</div>
 
     <p class="project-description">
-        This project demonstrates an AR navigation system for campus visitors.
-        Using web-based AR markers and A-Frame, users can view interactive
-        navigation arrows and building information directly from their phone.
+        <h2>Description</h2>
+        Exposure Therapy in Virtual Reality. Gradually face your fears in safe, immersive VR environments.
+        Choose a phobia below to begin your journey toward recovery.
     </p>
 
     <div class="team-name">
-        Team Name: VR Navigators
+        Team Name: RealityForge
     </div>
 
-    <ul class="team-members">
-        <li>Karan Gupta</li>
-        <li>Ananya Rao</li>
-        <li>Rahul Das</li>
-    </ul>
+    <div class="team-members-row">
+        <strong>Team Members:</strong> Anandhu Krishna A S, Adithya Krishnan KS, Abhijith Sreekumar, Adithyan Gireesh Kumar, Abin Roy, Anandhan S, Abhimanyu S, Kevin B Kothat, Adhwika Nair, Joyal Johny
+    </div>
 
     <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+        <iframe src="https://www.youtube.com/embed/53ewRcBWJ64" 
                 title="YouTube video player" 
                 frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe>
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     TEAM 4
+     ===================================================== -->
+<section class="team-card">
+
+    <h1 class="project-title">Project: Fearless</h1>
+
+    <div class="project-tagline">Virtual exposure but real confidence</div>
+
+    <p class="project-description">
+        <h2>Description</h2>
+        The VR Fear Simulation System is an interactive virtual reality application designed to help individuals
+        gradually overcome common fears through controlled exposure. The system uses immersive 3D environments
+        to simulate real-life situations that may trigger fear, allowing users to experience and confront these
+        scenarios in a safe and controlled setting.<br><br>
+        The project is based on the concept of Exposure Therapy, a psychological technique used to reduce fear
+        and anxiety by gradually exposing individuals to the source of their fear. By recreating these
+        environments in virtual reality, users can face their fears step-by-step without real-world risk.<br><br>
+        The application includes several simulated environments representing common phobias, such as fear of
+        heights, fear of darkness, fear of public speaking (stage fear), and fear of insects. Each environment
+        is designed to create a realistic experience using interactive 3D scenes, movement controls, and
+        immersive visuals.
+    </p>
+
+    <div class="team-name">
+        Team Name: Meta Mind
+    </div>
+
+    <div class="team-members-row">
+        <strong>Team Members:</strong> Aksa Joy, Baby Mumthas P, Hannan Mariyam, Elizabeth Mariyam, Anagha KR, Adheena Beeny, Bhagya Ashok, Maria Christo, Fathima Rasha Abdul Rahim
+    </div>
+
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/geN4u4q_luQ" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe>
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     TEAM 5
+     ===================================================== -->
+<section class="team-card">
+
+    <h1 class="project-title">Project: Adversity</h1>
+
+    <div class="project-tagline">Changing reaction to instinct</div>
+
+    <p class="project-description">
+        <h2>Description</h2>
+        A driving simulator to help people with night time driving and switching between low beam and high beam depending on the situation.
+    </p>
+
+    <div class="team-name">
+        Team Name: beyondYourLimits
+    </div>
+
+    <div class="team-members-row">
+        <strong>Team Members:</strong> Shone Bijju, Muhammed Ifsan K A, Haritt Moothedan, Midhun Milton, Prince Boateng, Jeremiah Thomas Bency, Gautham Grisal M G, Vinayak Mongia
+    </div>
+
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/PvTn0_8uKNg" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe>
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     TEAM 6
+     ===================================================== -->
+<section class="team-card">
+
+    <h1 class="project-title">Project: Hear the Battle</h1>
+
+    <div class="project-tagline">Hear the Battle</div>
+
+    <p class="project-description">
+        <h2>Description</h2>
+        We can witness the visual representation of the major historic events that happened.
+    </p>
+
+    <div class="team-name">
+        Team Name: Hear the Battle
+    </div>
+
+    <div class="team-members-row">
+        <strong>Team Members:</strong> Mehdi Ali, Fanhal Fathima, Akshara Arun, Joash, Jenna, Minha Shukoor, Hrithunand, Hawa, Hashima, Devapriya S, Lubna
+    </div>
+
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/H7d0RZGlZyg" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen></iframe>
     </div>
 
