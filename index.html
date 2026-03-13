@@ -93,6 +93,52 @@ body{
 
 
 /* =====================================================
+   HERO BANNER
+   ===================================================== */
+.hero-banner{
+    width:100%;
+    height:600px;
+    background-image: url('6691368.jpg');
+    background-size:cover;
+    background-position:center;
+    position:relative;
+}
+
+.hero-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.4);
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:center;
+    padding:0 80px;
+}
+
+.hero-title{
+    color:#ffffff;
+    font-size:42px;
+    font-weight:800;
+    margin-bottom:12px;
+    text-shadow:0 2px 8px rgba(0,0,0,0.6);
+}
+
+.hero-subtitle{
+    color:#80DEEA;
+    font-size:22px;
+    font-weight:600;
+    margin-bottom:10px;
+    text-shadow:0 2px 6px rgba(0,0,0,0.5);
+}
+
+.hero-description{
+    color:#f0f0f0;
+    font-size:16px;
+    max-width:500px;
+    text-shadow:0 1px 4px rgba(0,0,0,0.5);
+}
+
+/* =====================================================
    MAIN CONTAINER
    ===================================================== */
 .container{
@@ -129,7 +175,7 @@ body{
 .project-title{
     font-size:28px;
     margin-bottom:15px;
-    color:var(--dark-blue);
+    color:var(--white);
 }
 
 /* =====================================================
@@ -324,6 +370,17 @@ body{
     <div class="navbar-center">AR/VR</div>
     <div class="navbar-date">5 March 2026</div>
 </nav>
+
+<!-- =====================================================
+     HERO BANNER
+     ===================================================== -->
+<div class="hero-banner">
+    <div class="hero-overlay">
+        <h1 class="hero-title">Welcome to YISL Workshop</h1>
+        <p class="hero-subtitle">Exploring the Future Through AR &amp; VR</p>
+        <p class="hero-description">Discover innovative projects built by the next generation of immersive technology creators.</p>
+    </div>
+</div>
 
 
 <div class="container">
