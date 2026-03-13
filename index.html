@@ -97,11 +97,24 @@ body{
    ===================================================== */
 .hero-banner{
     width:100%;
-    height:600px;
+    height: 600px;
     background-image: url('6691368.jpg');
     background-size:cover;
     background-position:center;
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
     position:relative;
+    overflow:hidden;
+}
+
+.hero-img{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+    z-index:0;
 }
 
 .hero-overlay{
@@ -113,6 +126,7 @@ body{
     align-items:flex-start;
     justify-content:center;
     padding:0 80px;
+    z-index:1;
 }
 
 .hero-title{
@@ -136,6 +150,28 @@ body{
     font-size:16px;
     max-width:500px;
     text-shadow:0 1px 4px rgba(0,0,0,0.5);
+}
+
+@media(max-width:700px){
+    .hero-banner{
+        height:300px;
+        background-position:right center;
+    }
+    .hero-overlay{
+        padding:0 24px;
+        align-items:center;
+        text-align:center;
+    }
+    .hero-title{
+        font-size:26px;
+    }
+    .hero-subtitle{
+        font-size:16px;
+    }
+    .hero-description{
+        font-size:13px;
+        max-width:100%;
+    }
 }
 
 /* =====================================================
@@ -375,6 +411,7 @@ body{
      HERO BANNER
      ===================================================== -->
 <div class="hero-banner">
+    <img src="6691368.jpg" alt="VR Hero" class="hero-img">
     <div class="hero-overlay">
         <h1 class="hero-title">Welcome to YISL Workshop</h1>
         <p class="hero-subtitle">Exploring the Future Through AR &amp; VR</p>
