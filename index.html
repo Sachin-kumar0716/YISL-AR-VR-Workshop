@@ -28,7 +28,7 @@
 
 body{
     font-family: "Segoe UI", Tahoma, sans-serif;
-    background: var(--dark-blue);
+    background: #ffffff;
     color: var(--cream);
     line-height:1.6;
 }
@@ -39,37 +39,58 @@ body{
 .navbar{
     position:sticky;
     top:0;
-    background:var(--mid-blue);
-    padding:18px 40px;
+    background:#ffffff;
+    padding:10px 20px;
     display:flex;
     align-items:center;
     justify-content:space-between;
-    box-shadow:0 6px 18px rgba(0,0,0,0.4);
-    border-bottom:3px solid var(--light-cyan);
+    box-shadow:0 6px 18px rgba(0,0,0,0.2);
+    border-bottom:3px solid #cccccc;
     z-index:1000;
 }
 
 .navbar h2{
-    color:var(--cream);
-    letter-spacing:2px;
-    flex:1;
+    background: #f94f5e;
+    color:#ffffff;
+    letter-spacing:1px;
+    display:inline-block;
+    padding:8px 8px;
+    border-radius:25px;
+    font-size:20px;
+    font-weight:650;
+    width:fit-content;
 }
 
 .navbar-center{
-    color:var(--cream);
-    font-size:22px;
-    font-weight:bold;
-    letter-spacing:2px;
-    flex:1;
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    background: #f94f5e;
+    color:#ffffff;
+    font-size:20px;
+    font-weight:650;
+    letter-spacing:1px;
     text-align:center;
+    padding:8px 20px;
+    border-radius:25px;
+    width:fit-content;
 }
 
 .navbar-date{
-    color:var(--cream);
-    font-size:16px;
-    flex:1;
-    text-align:right;
+    background: #f94f5e;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 650;
+    text-align: center;
+    padding: 8px 16px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin-left:auto;
 }
+
 
 /* =====================================================
    MAIN CONTAINER
@@ -115,7 +136,7 @@ body{
    PROJECT TAGLINE
    ===================================================== */
 .project-tagline{
-    font: size 20px;px;
+    font-size:20px;
     color:var(--cream);
     font-style:italic;
     margin-bottom:20px;
@@ -240,6 +261,46 @@ body{
 }
 
 /* =====================================================
+   TEAM CARD COLOR VARIANTS (Blue family)
+   ===================================================== */
+.team-card-1{
+    background: #0B3D6B; /* deep navy blue */
+    border-color: #4FC3F7;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.6), inset 0 0 15px rgba(79,195,247,0.2);
+}
+.team-card-2{
+    background: #0D47A1; /* royal blue */
+    border-color: #82B1FF;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.6), inset 0 0 15px rgba(130,177,255,0.2);
+}
+.team-card-3{
+    background: #006064; /* dark teal-blue */
+    border-color: #80DEEA;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.6), inset 0 0 15px rgba(128,222,234,0.2);
+}
+.team-card-4{
+    background: #1A237E; /* indigo blue */
+    border-color: #9FA8DA;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.6), inset 0 0 15px rgba(159,168,218,0.2);
+}
+.team-card-5{
+    background: #1B4F6A; /* steel blue */
+    border-color: #4E8D9C;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.6), inset 0 0 15px rgba(78,141,156,0.2);
+}
+.team-card-6{
+    background: #1A3A5C; /* slate blue */
+    border-color: #89D4FF;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.6), inset 0 0 15px rgba(137,212,255,0.2);
+}
+
+.team-card-7{
+    background: #473472;
+    border-color: #9B7FD4;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.6), inset 0 0 15px rgba(155,127,212,0.2);
+}
+
+/* =====================================================
    RESPONSIVE TEXT
    ===================================================== */
 @media(max-width:700px){
@@ -271,29 +332,27 @@ body{
 <!-- =====================================================
      TEAM 1 (COPY THIS BLOCK TO ADD MORE TEAMS)
      ===================================================== -->
-<section class="team-card">
+<section class="team-card team-card-7">
 
-    <h1 class="project-title"> Project: V-Connect</h1>
+    <h1 class="project-title">Project: Cartoon Verse</h1>
 
-    <div class="project-tagline">Project Title : Meet Beyond Boundaries</div>
-<h2 class="project-description h2">Description</h2>
+    <div class="project-tagline">Live your childhood</div>
+
     <p class="project-description">
-
-        Meet Beyond Boundaries - An innovative VR communication platform that 
-        enables immersive virtual meetings and social interactions, breaking 
-        down geographical barriers through cutting-edge virtual reality technology.
+        <h2>Description</h2>
+        It is a VR web application — the world of Tom and Jerry in a 3D environment where users can explore a cartoon style house.
     </p>
 
     <div class="team-name">
-        Team Name: Team 404                                                                                                                                                                                                             
+        Team Name: Nova
     </div>
 
     <div class="team-members-row">
-        <strong>Team Members:</strong> Muhammad Shegil, Nikhil N, Muhammad Rihan, Muhammad Danish, Muhammad Swalih, Muhammad MA, Muhammad Ramzin, Vishnu Priya, Sona Suresh, Ajin KK
+        <strong>Team Members:</strong> Muhammed Shaheem, Sooraj Sunilkumar, Adithya M, Ashwin A, Ranjana KP, Pooja Krishnan S, Muhammed Shibil, Muhammed Ithban, Abhinand GR
     </div>
 
     <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/e1OXLJoEBe0" 
+        <iframe src="https://www.youtube.com/embed/UtyntXyIR1s" 
                 title="YouTube video player" 
                 frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -307,10 +366,8 @@ body{
 <!-- =====================================================
      TEAM 2
      ===================================================== -->
-<section class="team-card">
-
-    <h1 class="project-title">FocusXR</h1>
-
+<section class="team-card team-card-2">
+<h1 class="project-title">Project: Cartoon Verse</h1>
     <div class="project-tagline">Escape Distractions, Enter Focus</div>
 
     <p class="project-description">
@@ -343,10 +400,8 @@ body{
 <!-- =====================================================
      TEAM 3
      ===================================================== -->
-<section class="team-card">
-
-    <h1 class="project-title">Project: PhobiaVR</h1>
-
+<section class="team-card team-card-3">
+<h1 class="project-title">Project: Cartoon Verse</h1>
     <div class="project-tagline">face your fears</div>
 
     <p class="project-description">
@@ -379,10 +434,8 @@ body{
 <!-- =====================================================
      TEAM 4
      ===================================================== -->
-<section class="team-card">
-
-    <h1 class="project-title">Project: Fearless</h1>
-
+<section class="team-card team-card-4">
+<h1 class="project-title">Project: Cartoon Verse</h1>
     <div class="project-tagline">Virtual exposure but real confidence</div>
 
     <p class="project-description">
@@ -423,10 +476,8 @@ body{
 <!-- =====================================================
      TEAM 5
      ===================================================== -->
-<section class="team-card">
-
-    <h1 class="project-title">Project: Adversity</h1>
-
+<section class="team-card team-card-5">
+<h1 class="project-title">Project: Cartoon Verse</h1>
     <div class="project-tagline">Changing reaction to instinct</div>
 
     <p class="project-description">
@@ -457,11 +508,9 @@ body{
 <!-- =====================================================
      TEAM 6
      ===================================================== -->
-<section class="team-card">
-
-    <h1 class="project-title">Project: Hear the Battle</h1>
-
-    <div class="project-tagline">Hear the Battle</div>
+<section class="team-card team-card-6">
+<h1 class="project-title">Project: Cartoon Verse</h1>
+    <div class="project-tagline">Project:Hear the Battle</div>
 
     <p class="project-description">
         <h2>Description</h2>
@@ -487,6 +536,40 @@ body{
 
 </section>
 
+
+<!-- =====================================================
+     TEAM 7
+     ===================================================== -->
+
+<section class="team-card team-card-1">
+<h1 class="project-title">Project: Cartoon Verse</h1>
+    <div class="project-tagline">Project Title : Meet Beyond Boundaries</div>
+<h2 class="project-description h2">Description</h2>
+    <p class="project-description">
+
+        Meet Beyond Boundaries - An innovative VR communication platform that 
+        enables immersive virtual meetings and social interactions, breaking 
+        down geographical barriers through cutting-edge virtual reality technology.
+    </p>
+
+    <div class="team-name">
+        Team Name: Team 404                                                                                                                                                                                                             
+    </div>
+
+    <div class="team-members-row">
+        <strong>Team Members:</strong> Muhammad Shegil, Nikhil N, Muhammad Rihan, Muhammad Danish, Muhammad Swalih, Muhammad MA, Muhammad Ramzin, Vishnu Priya, Sona Suresh, Ajin KK
+    </div>
+
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/e1OXLJoEBe0" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe>
+    </div>
+
+</section>
 
 </div>
 
