@@ -124,80 +124,69 @@ body{
    ===================================================== */
 .hero-banner{
     width:100%;
-    height: 650px;
-    background-image: url('6691368.jpg');
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-    -webkit-background-size:cover;
+    height:400px;
+    background-color: purple;
     position:relative;
-    overflow:hidden;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+    padding: 0 80px;
+    box-sizing: border-box;
+    gap: 40px;
 }
 
-.hero-img{
-    position:absolute;
-    inset:0;
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    object-position:center;
-    z-index:0;
+.hero-banner .hero-img{
+    height: 300px;
+    width: auto;
+    object-fit: contain;
+    flex-shrink: 0;
 }
 
-.hero-overlay{
-    position:absolute;
-    inset:0;
-    background:rgba(0,0,0,0.4);
+.hero-text{
     display:flex;
     flex-direction:column;
     align-items:flex-start;
-    justify-content:center;
-    padding:0 80px;
-    z-index:1;
+    text-align:left;
 }
 
 .hero-title{
     color:#ffffff;
-    font-size:42px;
-    font-weight:800;
-    margin-bottom:12px;
-    text-shadow:0 2px 8px rgba(0,0,0,0.6);
+    font-size:72px;
+    font-weight:900;
+    margin-bottom:16px;
+    text-shadow:0 2px 8px rgba(0,0,0,0.4);
 }
 
 .hero-subtitle{
-    color:#80DEEA;
-    font-size:22px;
-    font-weight:600;
-    margin-bottom:10px;
-    text-shadow:0 2px 6px rgba(0,0,0,0.5);
+    color:#ffffff;
+    font-size:48px;
+    font-weight:800;
+    margin-bottom:12px;
+    text-shadow:0 2px 6px rgba(0,0,0,0.4);
 }
 
 .hero-description{
     color:#f0f0f0;
-    font-size:16px;
-    max-width:500px;
-    text-shadow:0 1px 4px rgba(0,0,0,0.5);
+    font-size:22px;
+    font-weight:500;
+    text-shadow:0 1px 4px rgba(0,0,0,0.4);
 }
 
 @media(max-width:700px){
     .hero-banner{
         height:300px;
-        background-position:right center;
-    }
-    .hero-overlay{
-        padding:0 24px;
-        align-items:center;
-        text-align:center;
+        padding: 0 24px;
+        align-items:flex-start;
     }
     .hero-title{
-        font-size:26px;
+        font-size:36px;
     }
     .hero-subtitle{
-        font-size:16px;
+        font-size:26px;
     }
     .hero-description{
-        font-size:13px;
-        max-width:100%;
+        font-size:16px;
     }
 }
 
@@ -438,12 +427,12 @@ body{
      HERO BANNER
      ===================================================== -->
 <div class="hero-banner">
-    <img src="6691368.jpg" alt="VR Hero" class="hero-img">
-    <div class="hero-overlay">
-        <h1 class="hero-title">Welcome to YISL Workshop</h1>
-        <p class="hero-subtitle">Exploring the Future Through AR &amp; VR</p>
-        <p class="hero-description">Discover innovative projects built by the next generation of immersive technology creators.</p>
+    <div class="hero-text">
+        <h1 class="hero-title">TEAM PROJECTS</h1>
+        <p class="hero-subtitle">CUSAT Cochin, Kerala</p>
+        <p class="hero-description">5 March 2026</p>
     </div>
+    <img src="guy-wearing-vr-goggles-neon-sign.png" alt="VR Goggles" class="hero-img">
 </div>
 
 
@@ -472,8 +461,9 @@ body{
         <strong>Team Members:</strong> Muhammed Shaheem, Sooraj Sunilkumar, Adithya M, Ashwin A, Ranjana KP, Pooja Krishnan S, Muhammed Shibil, Muhammed Ithban, Abhinand GR
     </div>
 
+    <h2>Demo Videos</h2>
     <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/UtyntXyIR1s" 
+        <iframe src="https://www.youtube.com/embed/UtyntXyIR1s"
                 title="YouTube video player" 
                 frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -506,8 +496,9 @@ body{
         <strong>Team Members:</strong> Haaniah N, Fathima Hiba KP, Anannya Raj K, Farsana A S, Gowripriya B Nair, Bhavya B Madhu, Devika Rejith, Arya Jayaprasad, Akshaya Ragesh
     </div>
 
+    <h2>Demo Videos</h2>
     <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/LheF1uLCS6c" 
+        <iframe src="https://www.youtube.com/embed/LheF1uLCS6c"
                 title="YouTube video player" 
                 frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -539,8 +530,9 @@ body{
         <strong>Team Members:</strong> Anandhu Krishna A S, Adithya Krishnan KS, Abhijith Sreekumar, Adithyan Gireesh Kumar, Abin Roy, Anandhan S, Abhimanyu S, Kevin B Kothat, Adhwika Nair, Joyal Johny
     </div>
 
+    <h2>Demo Videos</h2>
     <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/53ewRcBWJ64" 
+        <iframe src="https://www.youtube.com/embed/53ewRcBWJ64"
                 title="YouTube video player" 
                 frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -582,8 +574,9 @@ body{
         <strong>Team Members:</strong> Aksa Joy, Baby Mumthas P, Hannan Mariyam, Elizabeth Mariyam, Anagha KR, Adheena Beeny, Bhagya Ashok, Maria Christo, Fathima Rasha Abdul Rahim
     </div>
 
+    <h2>Demo Videos</h2>
     <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/geN4u4q_luQ" 
+        <iframe src="https://www.youtube.com/embed/geN4u4q_luQ"
                 title="YouTube video player" 
                 frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -614,8 +607,9 @@ body{
         <strong>Team Members:</strong> Shone Bijju, Muhammed Ifsan K A, Haritt Moothedan, Midhun Milton, Prince Boateng, Jeremiah Thomas Bency, Gautham Grisal M G, Vinayak Mongia
     </div>
 
+    <h2>Demo Videos</h2>
     <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/PvTn0_8uKNg" 
+        <iframe src="https://www.youtube.com/embed/PvTn0_8uKNg"
                 title="YouTube video player" 
                 frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -646,8 +640,9 @@ body{
         <strong>Team Members:</strong> Mehdi Ali, Fanhal Fathima, Akshara Arun, Joash, Jenna, Minha Shukoor, Hrithunand, Hawa, Hashima, Devapriya S, Lubna
     </div>
 
+    <h2>Demo Videos</h2>
     <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/H7d0RZGlZyg" 
+        <iframe src="https://www.youtube.com/embed/H7d0RZGlZyg"
                 title="YouTube video player" 
                 frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -681,8 +676,9 @@ body{
         <strong>Team Members:</strong> Muhammad Shegil, Nikhil N, Muhammad Rihan, Muhammad Danish, Muhammad Swalih, Muhammad MA, Muhammad Ramzin, Vishnu Priya, Sona Suresh, Ajin KK
     </div>
 
+    <h2>Demo Videos</h2>
     <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/e1OXLJoEBe0" 
+        <iframe src="https://www.youtube.com/embed/e1OXLJoEBe0"
                 title="YouTube video player" 
                 frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
